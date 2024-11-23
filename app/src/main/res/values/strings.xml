@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project_App</string>
+    <string name="doctor_image_description">Description de image du médecin</string>
+    <string name="start_button_icon_description">Description de icône du bouton de démarrage</string>
+    <string name="start_text">Démarrer</string>
+    <string name="button_title_mentor_chat_activity">ENVOYER</string>
+</resources>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorCartActivity">
+
+    <TextView
+        android:id="@+id/tvTotalPricedoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: 0 DH"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#008000"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="90dp"
+        app:layout_constraintBottom_toTopOf="@id/recyclerViewCartdoctor"
+        app:layout_constraintEnd_toStartOf="@id/btnBuyNowDoctor"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBuyNowDoctor"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/buy_now_bg"
+        android:fontFamily="@font/open_sans"
+        android:text="Buy Now"
+        android:textColor="@color/white"
+        android:layout_marginStart="35dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tvTotalPricedoctor"
+        app:layout_constraintTop_toTopOf="@id/tvTotalPricedoctor" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCartdoctor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalPricedoctor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

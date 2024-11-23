@@ -1,0 +1,300 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="215dp"
+        android:background="@drawable/rectangle_round"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Dear Patient"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose an option"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dietCard"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <LinearLayout
+            android:layout_width="155dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/diet"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:background="#F0FFF0"
+                android:contentDescription="Diet Icon"
+                android:onClick="onDietIconClick"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ccv" />
+
+            <TextView
+                android:id="@+id/dietTitle"
+                android:layout_width="56dp"
+                android:layout_height="30dp"
+                android:text="Diet"
+                android:textColor="#22BE87"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myDoctorsCard"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/myDoctors"
+                android:layout_width="150dp"
+                android:layout_height="92dp"
+                android:background="#F0FFF0"
+                android:contentDescription="My Doctors Icon"
+                android:onClick="onMyDoctorsIconClick"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/doctor" />
+
+            <TextView
+                android:id="@+id/myDoctorsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:text="My Doctors"
+                android:textColor="#22BE87"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chatCard"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myDoctorsCard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/chat"
+                android:layout_width="150dp"
+                android:layout_height="97dp"
+                android:background="#F0FFF0"
+                android:contentDescription="Chat Icon"
+                android:onClick="onChatIconClick"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/chatt2" />
+
+            <TextView
+                android:id="@+id/chatTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                android:textColor="#22BE87"
+                android:textSize="13sp"
+                android:background="#F0FFF0"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profileCard"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dietCard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/profileIcon"
+                android:layout_width="150dp"
+                android:layout_height="98dp"
+                android:background="#F0FFF0"
+                android:contentDescription="Profile Icon"
+                android:onClick="onProfileIconClick"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/msh" />
+
+            <TextView
+                android:id="@+id/profileTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Store"
+                android:textColor="#22BE87"
+                android:textSize="16sp"
+                android:background="#F0FFF0"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- New Option 1 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/option1Card"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileCard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/option1Icon"
+                android:layout_width="150dp"
+                android:layout_height="98dp"
+                android:background="#F0FFF0"
+                android:contentDescription="Option 1 Icon"
+                android:onClick="onOption1IconClick"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/calendar" />
+
+            <TextView
+                android:id="@+id/option1Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calender"
+                android:textColor="#22BE87"
+                android:textSize="16sp"
+                android:background="#F0FFF0"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- New Option 2 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/option2Card"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chatCard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/option2Icon"
+                android:layout_width="150dp"
+                android:layout_height="98dp"
+                android:background="#F0FFF0"
+                android:contentDescription="Option 2 Icon"
+                android:onClick="onOption2IconClick"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cons" />
+
+            <TextView
+                android:id="@+id/option2Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules"
+                android:textColor="#22BE87"
+                android:textSize="16sp"
+                android:background="#F0FFF0"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signOutBtn"
+        android:layout_width="211dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button_green"
+        android:text="SignOut"
+        android:textColor="#EDEDED"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option1Card"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

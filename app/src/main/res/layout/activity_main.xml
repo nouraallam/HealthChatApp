@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/appLogoImageView"
+        android:layout_width="550dp"
+        android:layout_height="550dp"
+        android:src="@drawable/yyt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/healthyFoodTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Healthy Food"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#0fd609"
+        android:layout_below="@id/appLogoImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-100dp" />
+
+    <TextView
+        android:id="@+id/premierDoctorsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Access Premier Online Doctors"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#0fd609"
+        android:layout_below="@id/healthyFoodTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp" />
+
+    <!-- Ajout du paragraphe -->
+    <TextView
+        android:id="@+id/paragraphTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Access instant consultations with qualified nutritionists from anywhere with our healthy food app"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_below="@id/premierDoctorsTextView"
+        android:layout_alignStart="@id/premierDoctorsTextView"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="4dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startButton"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/green_background"
+        android:clickable="true"
+        android:onClick="startActivityMethod"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="8dp"
+        android:text="Get Started"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

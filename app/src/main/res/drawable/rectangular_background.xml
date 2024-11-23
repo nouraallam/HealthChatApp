@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- État lorsque le champ de recherche est pressé -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#d4ffe5"/> <!-- Couleur de fond lorsqu'il est pressé -->
+            <corners android:radius="8dp"/> <!-- Rayon des coins -->
+            <stroke
+                android:width="1dp"
+                android:color="#e8ffe9"/>
+        </shape>
+    </item>
+
+    <!-- État par défaut du champ de recherche -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#F0FFF0"/> <!-- Vert très clair -->
+            <corners android:radius="8dp"/> <!-- Rayon des coins -->
+            <stroke
+                android:width="1dp"
+                android:color="#e8ffe9"/>
+        </shape>
+    </item>
+
+</selector>

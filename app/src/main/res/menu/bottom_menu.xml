@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/nutrition"
+        android:title="Nutrition" />
+    <item
+        android:id="@+id/shorts"
+        android:icon="@drawable/magazin"
+        android:title="Store" />
+    <item
+        android:id="@+id/subscriptions"
+        android:icon="@drawable/speech"
+        android:title="Chat" />
+    <item
+        android:id="@+id/library"
+        android:icon="@drawable/schedule"
+        android:title="Appointment" />
+</menu>
